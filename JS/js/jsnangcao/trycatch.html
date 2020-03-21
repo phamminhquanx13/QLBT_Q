@@ -1,0 +1,13 @@
+<script>
+    var domain = 'q'
+
+    try {
+        if (domain !== 's') {
+            throw new Error('Domain nay khong phai la trang chu');
+        }
+    } catch (e) {
+        console.log(e.message);
+    } finally {
+        console.log('End');
+    }
+</script>

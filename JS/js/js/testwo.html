@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body>
+    <form method="get" action="">
+        Nhập số: <input type="text" id="number" value="0" />
+        <input type="button" value="In kết quả" onclick="print_snt()" />
+    </form>
+    <div id="result">
+
+    </div>
+    <p id="demo"></p>
+    <p id="intro"></p>
+    <h1 onclick="D(this)">on click</h1>
+    <button type="button" onclick="C()">on Click</button>
+    <button id="quan">Click Me</button>
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p>Click the button to change the color of all p elements.</p>
+
+    <button onclick="Nav()">Try it</button>
+    <div id="piechart"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        var x = myFunction(4, 3);
+        document.getElementById("demo").innerHTML = x;
+
+        function myFunction(a, b) {
+            return a * b;
+        }
+
+        var myObject = {
+            firstName: "a",
+            lastName: "b",
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        x = myObject.fullName();
+        document.getElementById("demo").innerHTML = x;
+
+        var c = 5;
+
+        function C() {
+            document.getElementById("demo").innerHTML = c * c;
+        }
+
+        function D(id) {
+            id.innerHTML = "op";
+        }
+        document.getElementById("quan").addEventListener("click", Alert());
+
+        function Alert(params) {
+            alert("Opp");
+        }
+
+        function Nav() {
+            var tg = document.querySelectorAll("p");
+            var i;
+            for (i = 0; i < tg.length; i++) {
+                tg[i].style.color = "red";
+            }
+        }
+
+        function kiem_tra_snt(n) {
+
+            var flag = true;
+
+
+            if (n < 2) {
+                flag = false;
+            } else if (n == 2) {
+                flag = true;
+            } else if (n % 2 == 0) {
+                flag = false;
+            } else {
+
+                for (var i = 3; i <= Math.sqrt(n); i += 2) {
+                    if (n % i == 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+
+            return flag;
+        }
+
+
+        function print_snt() {
+            var number = document.getElementById("number").value;
+            number = parseInt(number);
+            var html = '';
+            for (var i = 1; i <= number; i++) {
+
+                if (kiem_tra_snt(i)) {
+                    html += i + ' <br/>';
+                }
+            }
+            document.getElementById("result").innerHTML = html;
+        }
+        var getName = () => {
+            return "pmq";
+        }
+        console.log(getName());
+
+        var getName2 = name => alert(name); // in ra alert pmq
+        getName2("pmq");
+        var listData = [
+            'pmq',
+            'na',
+            23,
+            'Đt'
+        ];
+        listData.map(value => console.log(isNaN(value) === false ? value + 1 : value.toUpperCase()));
+        console.log(listData);
+
+        var listNums = [1, 2, 4, 5, 99, 55, 7, 66];
+        var match = [];
+        listNums.forEach(value => {
+            if (value % 2 == 0) {
+                match.push(value);
+            }
+        });
+        console.log(match);
+    </script>
+</body>
+
+</html>

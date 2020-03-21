@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <script language="javascript">
+        function show_result() {
+            var input = document.getElementById("message");
+            var div = document.getElementById("result");
+            div.innerHTML = input.value;
+        }
+    </script>
+    <input type="text" id="message" value="" onkeyup="show_result()" />
+    <div id="result"></div>
+</body>
+
+</html>

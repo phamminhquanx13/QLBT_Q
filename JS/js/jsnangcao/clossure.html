@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Closure trong Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript">
+        // Bước 1: Tạo hàm closure
+        function showMessage(message) {
+            return function() {
+                alert(message + ' - q');
+            };
+        }
+
+        // Bước 2: khởi tạo hàm closure
+        var messageFunc = showMessage('Xin chào các bạn');
+
+        // Bước 3: Chạy hàm closure
+        messageFunc();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

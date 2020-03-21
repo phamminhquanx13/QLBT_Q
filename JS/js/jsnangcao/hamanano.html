@@ -1,0 +1,41 @@
+<script>
+    /*
+                                function show() {
+                                    alert("hello");
+                                }
+                                show();
+                                //su dung ham an duwoc khai bao bang toan tu
+
+                                var showMain = function() {
+                                    alert("a");
+                                };
+                                showMain();
+                                */
+
+    // ano duoc khoi tao tai thoi diem chay 
+    // goi truoc ham
+    show(); //hoat dong
+    function show() {
+        alert("quaun");
+    }
+    show(); //hoat dong sdu ham Trong ví dụ này cho dù bạn gọi hàm ở phía trên hay
+    // dưới đều hoạt động tốt là vì chương trình đã lưu hàm đó vào bộ nhớ.
+    // Nhưng nếu ta sử dụng anonymous function như ví dụ dưới đây sẽ bị lỗi ngay.
+    show(); //hoat dong
+    function show() {
+        alert("quaun");
+    }
+    show();
+
+    /// day la ham khong ten
+
+    (function() {
+        alert('pham quan');
+    }).call(this);
+
+    var demo = function test() {
+        alert('quan3');
+    };
+    demo(); // dúng
+    test(); // sai vì test không tồn tại
+</script>

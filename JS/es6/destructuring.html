@@ -1,0 +1,53 @@
+<script>
+    /*let date = [10, 03, 2016]
+                                let [d, m, y] = date;
+                                console.log("Day: " + d); // Day: 10
+                                console.log("Month: " + m); // Month: 03
+                                console.log("Year: " + y); // Year : 2016
+
+                                // Object
+                                let date = {
+                                    day: 10,
+                                    month: 06,
+                                    year: 2016
+                                }
+
+                                // Chuyển ba giá trị vào ba biến y
+                                let {
+                                    year: y
+                                } = date;
+
+                                // In kết quả
+                                console.log("Year: " + y)
+                               
+            var quan = {
+                name: "quan",
+                email: "quanbinh"
+            };
+            var {
+
+                name: thaythe1,
+                email: thaythe2
+            } = quan;
+            console.log(thaythe1, thaythe2);
+
+            let domain = ['thaythe1'];
+
+            let [main, sub = 'thaythe2'] = domain;
+            console.log(main);
+            console.log(sub);
+
+            */
+    /// 
+    var quan = () => {
+        return [
+            'pham quan',
+            'email'
+        ];
+    };
+
+    //chuyem doi
+    let [a, b] = quan();
+    console.log(a);
+    console.log(b);
+</script>

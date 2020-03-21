@@ -1,0 +1,22 @@
+<script>
+    // ES5
+
+    function Q(domain) {
+        domain = domain || 'pham quan';
+        return domain;
+    }
+
+    // usre
+    console.log('kong truyen tham so' + Q()); //in  ra qq phamquan
+    console.log('co truyem tham so' + Q('facebook')); // ra ra kq facebook
+
+
+    /// US6 
+
+    function A(domain = 'phamquan') {
+        return domain;
+    }
+    ///use
+    console.log("khong truyen tham so" + A()); //in  ra qq phamquan
+    console.log("truyen tham so" + A('facebook')); // ra ra kq facebook
+</script>

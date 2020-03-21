@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <script>
+        var cong = (form) => {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c = a + b
+            form.den.value = c
+        }
+
+        var tru = (form) => {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c = a - b
+            form.den.value = c
+        }
+
+        var nhan = (form) => {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c = a * b
+            form.den.value = c
+        }
+
+        var chia = (form) => {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c = a / b
+            form.den.value = c
+        }
+
+        var mu = (form) => {
+            a = eval(form.a.value)
+            b = eval(form.b.value)
+            c = Math.pow(a, b)
+            form.den.value = c
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="JS co ban">
+        <p><input type="text" size="4" value="100" name="a">
+            <input type="button" value="  + " onClick="cong(this.form)">
+
+            <input type="button" value="  -  " onClick="tru(this.form)">
+
+            <input type="button" value="  x  " onClick="nhan(this.form)">
+
+            <input type="button" value="/  " onClick="chia(this.form)">
+
+            <input type="button" value="  ^  " onClick="mu(this.form)">
+
+            <input type="number" size="4" value="200" name="b"> =
+            <input type="number" value="0" name="den" size="9"> </p>
+    </form>
+</body>
+
+</html>

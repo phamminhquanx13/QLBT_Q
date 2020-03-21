@@ -1,0 +1,24 @@
+<script>
+    var a = 12;
+    var b = 10;
+    if (a < b) {
+        var tmp = a;
+        a = b;
+        b = tmp;
+    }
+    console.log(a);
+    console.log(b);
+    console.log(tmp);
+
+
+    /// bien let chi duoc thuc thi trong lenh if
+    var b = 10;
+    if (a < b) {
+        let tmp = a;
+        a = b;
+        b = tmp;
+    }
+    console.log(a);
+    console.log(b);
+    console.log(tmp); // lúc này nếu bạn cố ý dùng thì sẽ xuất  hiện lỗi
+</script>

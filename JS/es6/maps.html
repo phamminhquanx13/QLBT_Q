@@ -1,0 +1,85 @@
+<script>
+    let map = new Map([
+        ["name", "pham quan"],
+        ["email", "quanbinh"],
+        ["english", "b1"]
+    ]);
+    map.set("company", "wànd"); //them phan tu
+    map.delete("company"); // xoa toan bo thi dung clear()
+    //dem tong so tu
+    console.log(map.size); //3
+
+    console.log(map);
+
+    //KEY
+    //EX key is Conts
+    let quan = new Map();
+    const KEYone = {};
+    map.set(KEYone, 'Pham Minh Quân');
+    console.log(map.get(KEYone)); // Pham Minh Quân
+
+    //Keey is NaN
+    map.set(NaN, 'quan');
+    console.log(map.get(NaN)); //quan
+
+
+    // cac ham bo tro trong Map
+    //ham keys() lay danh sach các keys
+    let mapone = new Map([
+        ["name", "pham quan"],
+        ["email", "quanbinh"],
+        ["english", "b1"]
+    ]);
+    for (var key of mapone.keys()) {
+        console.log(key);
+    }
+    //tuog tu co ham lay values();
+    //ham lay key and values
+    for (var emtry of mapone.entries()) {
+        console.log(emtry[0] + '--' + emtry[1]);
+    }
+
+    let maptwo = new Map([
+        ['name', "abc"],
+        ['domain', 'net']
+    ]);
+
+    // Xử lý
+    for (var [key, value] of maptwo) {
+        console.log(key + ' - ' + value);
+
+
+    }
+    // su dung foreach
+    maptwo.forEach((value, key) => {
+        console.log(key + '-' + value);
+    });
+
+    // Giá trị ban đầu
+    let mapa = new Map()
+        .set(1, 'a')
+        .set(2, 'b')
+        .set(3, 'c')
+        .set(4, 'd')
+        .set(5, 'e');
+
+    // Chuyển đổi
+    let map1 = new Map(
+        [...mapa].map(
+            ([key, value]) => [key, key + '-' + value]
+        )
+    );
+
+    console.log(map1);
+    // Kết quả: Map {1 => "1-a", 2 => "2-b", 3 => "3-c", 4 => "4-d", 5 => "5-e"}
+
+    // ha, filter 
+
+    let map2 = new Map(
+        [...mapa].filter(
+            ([key, value]) => key % 2 == 0
+        )
+    );
+    console.log(map2);
+    // Kết quả: Map { 2 => "2-b",  4 => "4-d","}
+</script>

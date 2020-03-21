@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <script>
+        var them = (num) => {
+
+            document.form.textview.value = document.form.textview.value + num;
+        }
+        var ketqua = () => {
+            var ex = document.form.textview.value;
+            if (ex) {
+                document.form.textview.value = eval(ex);
+            }
+        }
+        var xoa = () => {
+            document.form.textview.value = "";
+        }
+        var back = () => {
+            var ex = document.form.textview.value;
+            document.form.textview.value = ex.substring(0, ex.length - 1);
+        }
+    </script>
+    <style>
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin: 5px;
+            border-radius: 15px;
+            background-color: red;
+        }
+        
+        .button1 {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin: 5px;
+            border-radius: 15px;
+            background-color: blue;
+        }
+        
+        .button2 {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            margin: 5px;
+            border-radius: 15px;
+            background-color: greenyellow;
+        }
+        
+        .main {
+            height: 400px;
+            width: 260px;
+            margin-left: 250px;
+            background-color: tan;
+            border-radius: 5px;
+        }
+        
+        .textview {
+            margin-top: 20px;
+            width: 250px;
+            height: 50px;
+            margin: 5px;
+            font-size: 20;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <form name="form">
+            <input class="textview" name="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button1" type="button" value="C" onclick="xoa()"></td>
+                <td><input class="button1" type="button" value="DE" onclick="back()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="them(7)"></td>
+                <td><input class="button" type="button" value="8" onclick="them(8)"></td>
+                <td><input class="button" type="button" value="9" onclick="them(9)"></td>
+                <td><input class="button2" type="button" value="-" onclick="them('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="them(4)"></td>
+                <td><input class="button" type="button" value="5" onclick="them(5)"></td>
+                <td><input class="button" type="button" value="6" onclick="them(6)"></td>
+                <td><input class="button2" type="button" value="+" onclick="them('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="them(1)"></td>
+                <td><input class="button" type="button" value="2" onclick="them(2)"></td>
+                <td><input class="button" type="button" value="3" onclick="them(3)"></td>
+                <td><input class="button2" type="button" value="x" onclick="them('*')"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="them(0)"></td>
+
+                <td><input class="button2" type="button" value="/" onclick="them('/')"></td>
+                <td><input class="button2" type="button" value="." onclick="them('.')"></td>
+                <td><input class="button2" type="button" value="=" onclick="ketqua()"></td>
+
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

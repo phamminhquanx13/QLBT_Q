@@ -1,0 +1,58 @@
+<script>
+    /*/khoi tao bang new
+                                                    var num = new Set([1, 2, 3, 4]);
+                                                    //them pham tu
+                                                    num.add(5);
+                                                    console.log(num);
+                                                    // xoa phan tu
+                                                    num.delete(2);
+                                                    console.log(num); //in ra 1345
+                                                    // kiem tra phan tu ton tai
+                                                    console.log(num.has(1)); // True
+                                                    console.log(num.has(5)); // False
+
+                                                    var numbers = new Set([1, 2, 3, 4]);
+
+                                                    numbers.clear(); // numbers = Set(
+                                                   
+
+                                                let numbers = new Set([1, 2, 3, 4]);
+
+                                                for (let number of numbers) {
+                                                    console.log(number);
+
+                                                    //chuyen doi set sang arr
+                                                    let numbers = new Set([1, 2, 3, 4]);
+
+                                                    let arr_numbers = [...numbers];
+
+                                                    // Lúc này  biến arr_numbers sẽ là một mảng gồm 4 phần tử 
+                                                    // [1, 2, 3, 4]
+                                                    */
+
+    let arr_numbers = [1, 2, 3, 4];
+
+    let set_numbers = new Set(arr_numbers);
+
+    console.log(set_numbers);
+
+    // Lúc này  biến set_numbers sẽ là Set {1, 2, 3, 4}
+
+    let set = new Set([1, 2, 3]);
+    let arr = [...set].map(function(x) {
+        return x * 2;
+    });
+
+    console.log(set); // Set(1, 2, 3)
+    console.log(arr); // [2, 4, 6]
+
+    let set = new Set([1, 2, 3]);
+
+    // Lấy các số chẵn
+    let arr = [...set].filter(function(x) {
+        return (x % 2) == 0;
+    });
+
+    console.log(set); // Set(1, 2, 3)
+    console.log(arr); // [2]
+</script>

@@ -1,0 +1,36 @@
+<script>
+    var website = 'A';
+
+    // duoc bao boc boi cap dau ``
+
+    let temp = `Chao ${website}`;
+    console.log(temp);
+
+    //
+    var lapdongian = [
+        'quan1',
+        'quan2',
+        'quan3'
+    ];
+    //lôp
+    lapdongian.map(function(lap, key) {
+        console.log(`<h1>${lapdongian}</h1>`);
+    });
+
+    //lop 
+    var lapphuctap = [{
+        name: 'phamquan',
+        age: 'no'
+    }, {
+        name: 'phamquan2',
+        age: 'no'
+    }];
+    lapphuctap.map(function(lappt, key) {
+        var tm = `<div>
+            <h1>${lappt.name}</h1>
+            <h1>${lappt.age}</h2>
+            </div>
+            `;
+        console.log(tm);
+    });
+</script>

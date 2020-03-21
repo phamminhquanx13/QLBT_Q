@@ -1,0 +1,109 @@
+<html>
+
+<body>
+    <script>
+        /*function User() {
+                                                                                                                                                                                                                                    this.username = '';
+                                                                                                                                                                                                                                    this.password = '';
+                                                                                                                                                                                                                                    return this;
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                User.prototype.setInfo = function(username, password) {
+                                                                                                                                                                                                                                    this.username = username;
+                                                                                                                                                                                                                                    this.password = password;
+                                                                                                                                                                                                                                };
+                                                                                                                                                                                                                                User.prototype.checkLogin = function() {
+                                                                                                                                                                                                                                    return (this.username === 'admin' && this.password === '@123');
+                                                                                                                                                                                                                                };
+
+
+                                                                                                                                                                                                                                var user = new User();
+                                                                                                                                                                                                                                user.setInfo('no', '@123');
+                                                                                                                                                                                                                                if (user.checkLogin()) {
+                                                                                                                                                                                                                                    alert('thanh cong');
+                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                    alert('that bai');
+                                                                                                                                                                                                                                }
+
+
+                                                                                                                                                                                                                                var blog = {
+                                                                                                                                                                                                                                     domain: "a",
+                                                                                                                                                                                                                                     author: "A",
+                                                                                                                                                                                                                                     showWebsite: function(callbackFunction) {
+                                                                                                                                                                                                                                         callbackFunction();
+                                                                                                                                                                                                                                     },
+                                                                                                                                                                                                                                     render: function() {
+                                                                                                                                                                                                                                         this.showWebsite(function() {
+                                                                                                                                                                                                                                             console.log(this); // là đối tượng this
+                                                                                                                                                                                                                                             console.log(this.domain);
+                                                                                                                                                                                                                                             console.log(this.author);
+                                                                                                                                                                                                                                         }.bind(this));
+                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                 };
+                                                                                                                                                                                                                                 blog.render();
+                                                                                                                                                                                                                                */
+        var team = {
+            one: 'A',
+            two: 'B',
+            showWebsite: function(callbackFunction) {
+                callbackFunction();
+            },
+            render: function() {
+                this.showWebsite(function(args) {
+                    console.log(this);
+                    console.log(this.one);
+                    console.log(this.two);
+                }.bind(["sdfdf", "sdsfsdf"]));
+            }
+        };
+        team.render();
+        // goi băng call
+        function myProfil(name, age) {
+            console.log(name);
+            console.log(age);
+            return this;
+        }
+
+        var Cuong = myProfil.call(myProfil, "pham quan", 23);
+        // if no  myProfil, "pham quan", 23
+
+        function A(a, b) {
+            this.a = a;
+            this.b = b;
+        }
+
+        function B(a, b) {
+            A.call(this, a, b);
+        }
+
+        function C(a, b) {
+            A.call(this, a, b);
+        }
+        var q = new B('X', 4);
+        var p = new C('Y', 6);
+        console.log(q);
+        console.log(p);
+
+        var applytest = function(name, age) {
+            console.log(name);
+            console.log(age);
+        };
+        applytest.call(applytest, 'Pham quan', 12);
+        applytest.apply(applytest, ['hello', 12]);
+
+        ///ham an danh anonymos
+
+        var showDomain = function() {
+            alert('co the su dung toan tu = de goi ham');
+        };
+        showDomain();
+
+        //
+        (function() {
+            alert('co the goi ham khong can dung ten');
+        }).call(this);
+
+        //callback
+    </script>
+</body>
+
+</html>

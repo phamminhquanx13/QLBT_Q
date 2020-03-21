@@ -1,0 +1,21 @@
+<script>
+    //day la tham so kcon lai co the khai bao lhuong tham so khong xacv dinh
+    // Khai báo hàm
+    let domainList = (main, sub, ...other) => {
+        console.log("Main: " + main);
+        console.log("Sub: " + sub);
+        console.log("Other");
+        console.log(other);
+    }
+
+    // Gọi hàm
+    domainList('quan', 'quan2', 'quan3', 'quan4', 'quan5');
+    // ket qua la in ra trong do other la mot mang
+
+    let domainListnoOther = (main, sub, ...other) => {
+        console.log('main' + main);
+        console.log('sub' + sub);
+    }
+    domainListnoOther('quan', 'quan2');
+    //khong in ra mang ohetr
+</script>

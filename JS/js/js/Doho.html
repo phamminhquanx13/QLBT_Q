@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        span {
+            border: solid 1px #ACACAC;
+            padding: 2px;
+        }
+    </style>
+    <script language="javascript">
+        /*var h = null;
+                                var m = null;
+                                var s = null;
+
+                                var timeout = null;
+
+                                function start() {
+                                    function start() {
+                                        if (h === null) {
+                                            h = parseInt(document.getElementById('gio').value);
+                                            m = parseInt(document.getElementById('phut').value);
+                                            s = parseInt(document.getElementById('giay').value);
+                                        }
+                                        if (s === -1) {
+                                            m -= 1; //  - giảm số phút xuống 1 đơn vị
+                                            s = 59; //  - thiết lập số giây lại 59
+                                        }
+
+                                        // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+                                        //  - giảm số giờ xuống 1 đơn vị
+                                        //  - thiết lập số phút lại 59
+                                        if (m === -1) {
+                                            h -= 1;
+                                            m = 59;
+                                        }
+
+                                        // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
+                                        //  - Dừng chương trình
+                                        if (h == -1) {
+                                            clearTimeout(timeout);
+                                            alert('Hết giờ');
+                                            return false;
+                                        }
+
+                                        // hien thi dong ho
+                                        document.getElementById('h').innerText = h.toString();
+                                        document.getElementById('m').innerText = m.toString();
+                                        document.getElementById('s').innerText = s.toString();
+
+                                        // giam so phut xuong 1s va goi lai so phút
+                                        timeout = setTimeout(function() {
+                                            s--;
+                                            start();
+                                        }, 1000);
+                                    }
+                                }
+
+                                function stop() {
+                                    clearTimeout(timeout);
+                                }
+
+                        */
+        function xoa() {
+            var a = document.getElementById("quan");
+            var a_xoa = [];
+
+            var index = 0;
+            while (index < a.length) {
+                if (index % 2 != 0 && index != 0) {
+                    a_xoa.push(a[index]);
+                }
+                index++;
+            }
+            index = 0;
+            while (index < a_xoa.length) {
+                a_xoa[index].remove();
+                index++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>
+            input: <br/>
+        </p>
+        <input type="text" id="gio" placeholder="Giờ" value="" /> <br/>
+        <input type="text" id="phut" placeholder="Phut" value=""></br>
+        <input type="text" id="giay" placeholder="Giây" value="" />
+        <input type="button" value="Start" onclick="start()" />
+        <input type="button" value="Stop" onclick="stop()" /> <br/> <br/>
+    </div <div>
+    <span id="h">Giờ</span> :
+    <span id="m">Phút</span> :
+    <span id="s">Giây</span>
+    </div>
+    <div id="quan">
+        <div>a</div>
+        <div>b</div>
+        <div>a</div>
+        <div>a</div>
+        <div>a</div>
+        <div>b</div>
+        <div>b</div>
+        <div>a</div>
+        <div>a</div>
+        <div>b</div>
+    </div>
+    <button onclick="xoa()">Xoa</button>
+</body>
+
+</html>

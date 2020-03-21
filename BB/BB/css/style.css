@@ -1,0 +1,646 @@
+    .head-flix {
+        position: static;
+    }
+    
+    .he-1 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    
+    .he-2 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 130px;
+        font-size: 8px;
+        margin-top: 45px;
+        font-weight: bold;
+    }
+    
+    .he-2-2 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 90px;
+        font-size: 8px;
+        margin-top: 45px;
+        font-weight: bold;
+        word-wrap: normal
+    }
+    
+    .he-3 {
+        position: relative;
+        position: absolute;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 90px;
+        font-size: 7px;
+    }
+    
+    .he-4 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 90px;
+        font-size: 11px;
+        color: #498acf;
+        margin-top: 45px;
+        font-weight: bold;
+    }
+    
+    .he-5 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        margin-left: 90px;
+        font-size: 8px;
+    }
+    
+    .quan1 {
+        color: white;
+    }
+    
+    .he-6 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        font-size: 11px;
+        margin-top: 40px;
+        font-weight: bold;
+    }
+    
+    .he-7 {
+        position: relative;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    
+    .q-1 {
+        position: relative;
+        letter-spacing: 0.1px;
+        color: white;
+        word-spacing: 10px;
+        margin-top: 20px;
+    }
+    
+    .te {
+        margin-top: 20px;
+    }
+    
+    .text-1 {
+        position: relative;
+        letter-spacing: 0.1px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    
+    .text-2 {
+        position: relative;
+        letter-spacing: 0.1px;
+        font-size: 12px;
+    }
+    
+    .Q-2 {
+        width: 250px;
+        margin-top: 10px;
+        height: 44px;
+        margin-left: 420px;
+        background-color: #498acf;
+        color: white;
+    }
+    
+    .he-end-1 {
+        color: white;
+        letter-spacing: 0.1px;
+        margin-top: 200px;
+    }
+    
+    .he-end-1-1 {
+        font-size: 12px;
+    }
+    
+    .he-end-1-2 {
+        width: 190px;
+        height: 54px;
+        font-size: 15px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .icon-1 {
+        margin-top: 98px;
+    }
+    
+    .icon-2 {
+        margin-top: 50px;
+    }
+    
+    .call-1 {
+        margin-top: 20px;
+        color: white;
+        margin-top: 50px;
+        float: left;
+    }
+    
+    .q-3 {
+        margin-top: 40px;
+        background-color: white;
+        color: black;
+        width: 250px;
+        height: 52px;
+        margin-left: 200px;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex-container>div {
+        margin-top: 10px;
+        width: 100px;
+        margin: 90px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 80px;
+        background-color: white;
+    }
+    
+    .fatu-1 {
+        margin-top: 100px;
+    }
+    
+    .fatu-1-1 {
+        font-size: 36px;
+        color: #498acf;
+        font-weight: bold;
+    }
+    
+    .fatu-1-2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .fatu-1-3 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .fatu-2-1 {
+        letter-spacing: 0.1px;
+        font-size: 12px;
+        float: left;
+    }
+    
+    .fatu-2 {
+        margin-top: 20px;
+    }
+    
+    .quo-1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        margin-top: 190px;
+        margin-left: 180px;
+    }
+    
+    .quo-2 {
+        letter-spacing: 0.1px;
+        font-size: 12px;
+        color: white;
+        margin-left: 180px;
+    }
+    
+    .quo-3 {
+        letter-spacing: 0.1px;
+        font-size: 35px;
+        color: white;
+        margin-left: 180px;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    div.stars {
+        width: 200px;
+        display: inline-block;
+    }
+    
+    input.star {
+        display: none;
+    }
+    
+    label.star {
+        float: right;
+        padding: 5px;
+        font-size: 25px;
+        color: #498acf;
+        transition: all .2s;
+    }
+    
+    input.star:checked~label.star:before {
+        content: '\f005';
+        color: #498acf;
+        transition: all .25s;
+    }
+    
+    input.star-5:checked~label.star:before {
+        color: #498acf;
+        text-shadow: 0 0 40px #498acf;
+    }
+    
+    input.star-1:checked~label.star:before {
+        color: red;
+    }
+    
+    label.star:hover {
+        transform: rotate(-15deg) scale(1.3);
+    }
+    
+    label.star:before {
+        content: '\f006';
+        font-family: FontAwesome;
+    }
+    
+    .tes-1 {
+        border: 1px solid rgb(243, 237, 237);
+        margin-top: 100px;
+        width: 570px;
+        height: 220px;
+    }
+    
+    .tes-2 {
+        margin-left: 40px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+    }
+    
+    .tes-3 {
+        float: left;
+        font-size: 12px;
+        letter-spacing: 0.1px;
+        margin-left: 40px;
+    }
+    
+    .tes-4 {
+        margin-top: 50px;
+        letter-spacing: 0.1px;
+    }
+    
+    .te-text {
+        margin-left: 70px;
+        font-size: 12px;
+    }
+    
+    .te-text-1 {
+        margin-left: 70px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: -50px;
+    }
+    
+    .fo-1 {
+        margin-left: 36%;
+    }
+    
+    .fo-1-1 {
+        margin-top: 50px;
+        color: white;
+    }
+    
+    .fo-1-2 {
+        font-size: 12px;
+        float: left;
+        color: white;
+    }
+    
+    .fo-1-3 {
+        color: white;
+        font-size: 12px;
+    }
+    
+    .fo-3 {
+        color: white;
+    }
+    
+    .bt-se-1 {
+        margin-left: 38%;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border: 2px solid #498acf;
+        border-radius: 4px;
+        margin-top: 100px;
+        font-weight: bold;
+        color: #498acf;
+    }
+    
+    .bt-se-2 {
+        margin-left: 38%;
+        text-align: center;
+        width: 70px;
+        height: 70px;
+        background-color: #498acf;
+        border: 2px solid #498acf;
+        border-radius: 4px;
+        margin-top: 100px;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .se-1-1 {
+        margin-top: 20px;
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .se-1-2 {
+        letter-spacing: 0.2px;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .se-1-3 {
+        margin-left: 10px;
+        letter-spacing: 0.1px;
+        font-size: 12px;
+    }
+    
+    .se-quo {
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .se-img {
+        margin-top: 105px;
+        float: left;
+        width: 500px;
+    }
+    
+    .com-1 {
+        margin-top: 105px;
+    }
+    
+    .com-2 {
+        font-size: 13px;
+        letter-spacing: 0.1px;
+    }
+    
+    .com-3 {
+        margin-top: 10px;
+        color: #498acf;
+    }
+    
+    .com-4 {
+        margin-top: 10px;
+        letter-spacing: 0.1px;
+        font-size: 13px;
+        float: left;
+    }
+    
+    .bo-1-1 {
+        margin-top: 100px;
+        width: 550px;
+        height: 60px;
+        float: left;
+    }
+    
+    .bo-1-2 {
+        margin-left: 50px;
+        margin-top: 100px;
+        width: 550px;
+        height: 60px;
+    }
+    
+    .bo-1-3 {
+        margin-top: 40px;
+        width: 550px;
+        height: 60px;
+        float: left;
+    }
+    
+    .bo-1-4 {
+        margin-left: 50px;
+        margin-top: 40px;
+        width: 550px;
+        height: 60px;
+    }
+    
+    .bo-1-5 {
+        margin-top: 40px;
+        width: 1185px;
+        height: 180px;
+    }
+    
+    .co-btn1 {
+        margin-top: 40PX;
+        background-color: #498acf;
+        color: white;
+        height: 60px;
+        width: 200px;
+        border: 1px solid white;
+    }
+    
+    .co-btn2 {
+        margin-top: 40PX;
+        background-color: #c2c8ce;
+        color: white;
+        height: 60px;
+        width: 200px;
+        border: 1px solid white;
+        margin-left: 20px;
+    }
+    
+    .co-btn {
+        margin-left: 370px;
+    }
+    
+    .bo-text {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .map-co-1 {
+        margin-top: 40px;
+    }
+    
+    .new-co {
+        letter-spacing: 0.1px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .new-co-text {
+        letter-spacing: 0.1px;
+        font-size: 9px;
+    }
+    
+    .ga-1 {
+        color: #498acf;
+        margin-top: 70px;
+        letter-spacing: 0.1px;
+    }
+    
+    .ga-1-1 {
+        color: #498acf;
+        margin-top: 20px;
+        letter-spacing: 0.1px;
+    }
+    
+    #cars {
+        width: 250px;
+        height: 40px;
+    }
+    
+    #cars1 {
+        width: 250px;
+        height: 40px;
+    }
+    
+    .ga-text1 {
+        margin-top: 95px;
+    }
+    
+    .ga-text1-1 {
+        margin-top: 20px;
+    }
+    
+    .ga-form {
+        margin-top: 20px;
+    }
+    
+    .gaa-btn {
+        width: 500px;
+        height: 40px;
+        background-color: #498acf;
+        color: white;
+    }
+    
+    .banhxe-1 {
+        letter-spacing: 0.1px;
+        float: left;
+        margin-top: 100px;
+        font-size: 13px;
+    }
+    
+    .ab-1 {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .ab-2 {
+        margin-top: 20px;
+    }
+    
+    .ab-2-1 {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    .ab-3 {
+        margin-top: 100px;
+    }
+    
+    .ab-img1 {
+        margin-top: 200px;
+        margin-left: -400px;
+    }
+    
+    .ab-img2 {
+        margin-top: -300px;
+    }
+    
+    .form-radio {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        position: relative;
+        background-color: #f1f1f1;
+        color: #498acf;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-right: 7px;
+        outline: none;
+    }
+    
+    .form-radio:checked::before {
+        position: absolute;
+        font: 13px/1 'Open Sans', sans-serif;
+        left: 11px;
+        top: 7px;
+        content: '\02143';
+        transform: rotate(40deg);
+    }
+    
+    .form-radio:hover {
+        background-color: #498acf;
+    }
+    
+    .form-radio:checked {
+        background-color: #f1f1f1;
+    }
+    
+    label {
+        font: 15px/1.7 'Open Sans', sans-serif;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        cursor: pointer;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .home-button {
+        width: 570px;
+        height: 50px;
+        border: 1px solid white;
+    }
+    
+    .home-text-1 {
+        margin-right: 30px;
+    }
+    
+    .home-text-2 {
+        margin-right: 170px;
+    }
+    
+    .home-text-3 {
+        margin-right: 130px;
+    }
+    
+    .home-text-4 {
+        margin-right: 270px;
+    }
+    
+    .home-text-5 {
+        margin-right: 80px;
+    }

@@ -1,0 +1,37 @@
+<script>
+    /* var blog = {
+                        domain: "dssđ",
+                        author: "ttrtrt",
+                        showWebsite: function(callbackFunction) {
+                            callbackFunction();
+                        },
+                        render: function() {
+                            this.showWebsite(function() {
+                                console.log(this); // là đối tượng window  neu khai them var _a=this console this thi se la doi tuong this
+                                console.log(this.domain); // nên thuộc tính domain không tồn tại
+                                console.log(this.author); /// nên thuộc tính author không tồn tại
+                            });
+                        }
+                    };
+
+
+                    blog.render();
+                */
+    var blog = {
+        domain: "dssđ",
+        author: "ttrtrt",
+        showWebsite: function(callbackFunction) {
+            callbackFunction();
+        },
+        render: function() {
+            this.showWebsite(function() {
+                console.log(this); // là đối tượng this
+                console.log(this.domain); // nên thuộc tính domain không tồn tại
+                console.log(this.author); /// nên thuộc tính author không tồn tại
+            }.bind(this)); //or them .bind(["a","b"]);
+        }
+    };
+
+
+    blog.render();
+</script>

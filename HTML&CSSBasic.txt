@@ -1,0 +1,507 @@
+﻿Danh sách các thẻ trong html
+
+1> Căn bản
+-<1Doctype>-----Xác định phiên bản HTML đang sử dụng cho trình duyệt nhận.
+<html>----------Xác định tài liệu HTML.
+<head>----------Chức các thẻ cung cấp thông tin cho trang web xác định phần đầu của HTML.
+<title>---------Là tiêu đề đặt cho trang web.
+<body>----------Là thân HTML chức những phần hiện lên màn hình trình duyệt.
+<h1><h6>--------Tạo những mục trong web.
+<p>-------------Xác định đoạn văn bản.
+<br>------------Xuống dòng.
+<hr>------------Rạo đường kẻ phân trang.
+<!-- -->   -----Tạo chú thích.
+
+2>  Định dạng
+<abbr>-----------Tạo từ viết tắt.
+<acronym>---------Tạo từ viết tắt không hỗ trợ trong HTML 5.
+<b>--------------In đậm cho đoạn văn.
+<i>--------------In nghiêng cho đoạn văn.
+<address>--------Xác định thông tin liên hệ của tác giả.
+<bdo>------------Điều hướng một đoạn văn bản được chỉ định.
+<big>------------Cho đoạn văn bản đó có chữ to hơn bình thường.
+<small>----------Xác định một đoạn văn bản có kích thước chữ nhỏ hơn văn bản bình thường.
+<blockquote>-----Xác định đoạn trích dẫn từ một web khác.
+<code>-----------Khi đoạn văn mang ý nghĩa của các mã lệnh.
+<del>------------Tạo đường kẻ trên văn bản.
+<em>-------------In nghiêng văn bản.
+<u>--------------Tạo một đường gạch chân lên văn bản
+<ins>------------Tạo một đường gạch chân lên văn  bản.
+<kbd>------------Xác định một từ, cụm từ mang ý nghĩa là một phím hay một tổ hợp phím.
+<mark>-----------Tạo màu nền nổi bật cho văn bản.
+<meter>----------Tạo phần tử có ý nghĩa giống như: thước đo, ổ đĩa, ....
+<pre>------------Giúp cho nội dung mà bạn muốn hiển thị lên màn hình được giữ nguyên định dạng giống như trong lúc soạn thảo.
+<progress>-------Tạo một thanh tiến trình.
+<q>--------------Xác định một câu trích dẫn ngắn.
+<s>--------------Tạo đường kẻ ngang.
+<strong>---------Xác định đoạn văn bản được in đậm.
+<sub>------------Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa dưới văn bản bình thường.
+<sup>------------Tạo văn bản có kích thước nhỏ, nằm ở khoảng nửa trên văn bản bình thường.
+<time>-----------Những phần văn bản là: thời gian, ngày tháng, ngày lễ, ....
+<wbr>------------Ngắt bớt ký tự của một từ xuống dòng.
+
+3>Frames
+
+<frame>-----------Xác định một khung trong một bộ khung.
+<noframes>--------Xác định một nội dung sẽ được hiển thị khi trình duyệt không hỗ trợ thẻ <frame>
+<iframe>----------Nhúng một trang web khác vào trang web hiện tại.
+<frameset>--------Xác định một bộ khung.
+
+4> Images
+
+<img>-------------Chèn hình ảnh vào trang web.
+<map>&<area>------Tạo một bản đồ ảnh.
+<figure>----------Xác định một nội dung cần được tách biệt rõ ràng.
+<figcaption>------Tạo một tiêu đề cho nội dung được đặt bên trong phần tử <figure>
+
+5>Auddio/Video
+
+<audio>------------Tạo một "trình phát nhạc" cho trang web.
+<video>------------Tạo một "trình xem phim" cho trang web.
+<track>------------Chèn một bản phụ đề vào video.
+<source>-----------Chỉ định tài nguyên cho trình nghe nhạc hoặc trình xem phim.
+6) Links
+
+<a>----------------Tạo một liên kết đến một tài liệu nào đó.
+<nav>--------------Xác định một tập hợp các liên kết & thường được sử dụng kết hợp với CSS để tạo một thanh menu.
+
+7) Lists
+
+<ul>---------------Xác định một danh sách không có thứ tự.
+<ol>---------------Xác định một danh sách có thứ tự.
+<li>---------------Xác định một danh mục trong danh sách.
+8) Tables
+
+<table>------------Xác định phần tử là một cái bảng.
+<caption>----------Tạo tiêu đề cho bảng.
+<th>---------------Xác định phần tử là một ô tiêu đề trong hàng.
+<tr>---------------Xác định phần tử là một hàng trong bảng.
+<td>---------------Xác định phần tử là một ô trong hàng.
+<thead>------------Xác định những dòng nào thuộc "phần đầu" của bảng.
+<tbody>------------Xác định những dòng nào thuộc "phần thân" của bảng.
+<tfoot>------------Xác định những dòng nào thuộc "phần chân" của bảng.
+
+9) Styles
+
+<style>	----------Dùng để làm thùng chứa cho các đoạn mã CSS
+<div>-------------Nhóm các phần tử lại với nhau để tiện cho việc định dạng cũng như thiết kế bố cục của trang web
+<span>------------Nhóm các phần tử nội tuyến lại với nhau để tiện cho việc định dạng CSS
+<header>----------Xác định phần đầu của trang web
+<footer>----------Xác định phần chân của trang web
+<main>------------Xác định phần thân của trang web
+<dialog>----------Tạo một hộp thoại
+<summary>&<details>Tạo phần tử có dạng: "chỉ hiển thị tiêu đề còn chi tiết bị ẩn, khi bấm vào tiêu đề thì chi tiết mới hiển thị"
+
+10) Meta Info
+
+<head>------------Xác định phần đầu của tài liệu HTML(chứa các thẻ cung cấp thông tin cho trang web)
+<meta>------------Cung cấp thêm "thông tin về trang web" cho trình duyệt và các công cụ tìm kiếm
+<base>------------Xác định "đường dẫn cơ sở" trong trang web và kiểu mở liên kết mặc định
+
+11) Programming
+<script>---------Dùng để làm thùng chứa cho các câu lệnh JavaScript.
+<noscript>-------Xác định một nội dung HTML sẽ được hiển thị khi trình duyệt không hỗ trợ JavaScript hoặc đã tắt JavaScript.
+<embed>----------Dùng để nhúng một "tài liệu" nào đó vào trang web.
+<object>---------Dùng để nhúng một "tài liệu" nào đó vào trang web.
+<applet>---------Có thể thay thế Obj không hỗ trợ trong HTML5
+
+12) Graphics
+
+<anvas>---------được sử dụng để vẽ đồ họa nhanh chóng thông qua JS.
+<svg>-----------Là một thùng chứa cho đồ họa SVG.
+
+13) Reference
+
+<col>-----------Chỉ định các thuộc tính cột cho mỗi cột trong phần tử <colgroup>.
+<colgroup>------Chỉ định một nhóm gồm một hoặc nhiều cột trong bảng để định dạng.
+<dfn>-----------Đại diện cho trường hợp xác định của một thuật ngữ.
+<dd>------------Xác định một mô tả / giá trị của một thuật ngữ trong danh sách mô tả.
+<data>----------Liên kết nội dung đã cho với bản dịch có thể đọc bằng máy.
+<dir>-----------Không được hỗ trợ trong HTML5. Sử dụng <ul> thay thế. Xác định danh sách thư mục.
+<fieldset>------Nhóm các yếu tố liên quan trong một hình thức.
+<ins>-----------Xác định một văn bản đã được chèn vào một tài liệu.
+<kdb>-----------Xác định đầu vào bàm phím.
+<legend>--------Xác định chú thích cho phần tử <fieldset>.
+<optgroup>------Xác định một nhóm các tùy chọn liên quan trong danh sách thả xuống.
+<rp>------------Xác định nội dung hiển thị trong trình duyệt.
+<rt>------------Xác định một lời giải thích / phát âm của các ký tự (cho kiểu chữ Đông Á).
+<s>-------------Xác định văn bản không còn đúng.
+<tt>------------Không được hỗ trợ trong HTML5. Sử dụng CSS thay thế.Xác định văn bản teletype
+<template>------Xác định một mẫu.
+<datalist>------Chỉ định danh sách các tùy chọn được xác định trước cho các điều khiển đầu vào.
+<option>--------Xác định một tùy chọn trong drop-down list.
+<outout>--------Xác định đầu ra cho chương trình.
+<summary>-------Xác định tiêu đề hiển thị cho phần tử <detail>
+<basefont>------Không được hỗ trợ trong HTML5. 
+Sử dụng CSS thay thế Chỉ định màu, kích thước và phông chữ mặc định cho tất cả văn bản trong tài liệu.
+
+Các thuộc tính của CSS
+
+align-content   
+------Chỉ định căn chỉnh giữa các dòng bên trong một container chứa linh hoạt khi các mặt hàng không sử dụng tất cả không gian có sẵn.
+align-items
+------Chỉ định căn chỉnh cho các mục bên trong một container chứa linh hoạt
+align-self
+------Chỉ định căn chỉnh cho các mục bên trong một container được chọn linh hoạt
+all
+------Đặt lại tất cả các thuộc tính
+animation
+------Dung trong hoạt hình bao gồm tên, thời lượng hoạt ảnh chức năng,,,,
+animation-key
+------Quy định sự chậm trễ.
+animation-direction
+------Quy định phương hướng.
+animation-duration
+------Quy định về chu kỳ
+animation-fill-mode
+animation-iteration-count
+------Quy định số lần được thực hiện .
+animation-name
+------Qhỉ định tên cho hoạt hình.
+animation-play-state
+------Quy định chạy hay dừng nó.
+animation-timing-function
+------Quy định đường cong tốc độ
+backface-visibility
+------Xác định mặt sau phần tử có hiện hay không đối với người dùng.
+background
+------Thuốc tính quy định cho tất cả h nền bao gồm:
+background-attachment
+------Đặt xem hình nền có cuộn với phần còn lại của trang hay đã được sửa.
+background-blend-mode
+------chế độ hòa quyện background(color/image).
+background-clip
+------Xác định khoảng cách nền (màu sắc hoặc hình ảnh) sẽ mở rộng trong vòng một phần tử,
+background-color
+------Xác định màu sắc cho phần tử.
+background-image
+------Xác định image cho background.
+background-origin
+------Chỉ định gốc của background.
+background-position
+------Chỉ định vị trí của bg.
+background-repeat
+-Chỉ định dự lặp lại của hình nền.
+background-size
+------Chỉ định kích thước.
+border
+------Thuộc tính chung cho chiều rộng đường viền, kiểu đường viền và màu đường viền bao gồm:
+border-bottom
+border-bottom-color
+border-bottom-left-radius
+border-bottom-right-radius
+border-bottom-style
+border-bottom-width
+border-radius
+border-right
+border-right-color
+border-right-style
+border-right-width
+border-spacing
+border-style
+border-top
+border-top-color
+border-top-left-radius
+border-top-right-radius
+border-top-style
+border-top-width
+border-width
+bottom
+------Đặt vị trí các phần tử, từ dưới cùng của phần tử cha của nó.
+box-decoration-break
+------Đặt hành vi của nền và đường viền của một phần tử khi ngắt trang hoặc, đối với các phần tử nội tuyến, tại ngắt dòng.
+box-shadow
+------Đính kèm một hoặc nhiều bóng cho một phần tử
+box-sizing
+------Xác định cách tính chiều rộng và chiều cao của một phần tử: chúng có nên bao gồm phần đệm và viền hay không.
+break-after
+------Chỉ định xem có nên xảy ra việc ngắt trang hay cột hay không sau khi phần tử được chỉ định.
+break-before
+------Chỉ định xem có nên xảy ra việc ngắt trang hay cột hay không trước phần tử đã chỉ định.
+break-inside
+------Chỉ định xem có xảy ra việc ngắt trang hay cột hay không trong phần tử đã chỉ định.
+caption-side
+------Chỉ định vị trí của chú thích bảng
+caret-color
+------Chỉ định màu của con trỏ (dấu mũ) trong các đầu vào, textareas hoặc bất kỳ phần tử nào có thể chỉnh sửa.
+clear
+------Chỉ định các mặt của phần tử nổi phần tử không được phép nổi	
+clip
+------Xác định cho đoạn thành phần khi sử dụng thuộc tính position có giá trị"absolute".Như khi một Image 
+lớn hơn so với thành phần của nó khi đó ta có thể sử dụng clip.
+color
+------Thiết lập thuộc tính màu sắc
+columns bao gồm các thuộc tính cho cột như kích thước, số lượng phần tử...
+column-count	
+column-fill	
+column-gap	
+column-rule	
+column-rule-color	
+column-rule-style
+column-rule-width	
+column-span	
+column-width	
+content
+------Được sử dụng với: trước và sau các phần tử giả, để chèn nội dung được tạo.
+counter-increment	
+------Tăng hoặc giảm giá trị của một hoặc nhiều bộ đếm CSS.
+counter-reset
+------Creates or resets one or more CSS counters
+cursor	
+------Chỉ định con trỏ chuột sẽ được hiển thị khi trỏ qua một phần tử.
+direction
+------Chỉ định hướng văn bản / hướng viết.	
+display
+------Chỉ định cách hiển thị một phần tử HTML nhất định.
+empty-cells
+------Chỉ định có hay không hiển thị viền và nền trên các ô trống trong bảng.
+filter
+------Xác định hiệu ứng (ví dụ: làm mờ hoặc chuyển màu) trên một phần tử trước khi phần tử được hiển thị.
+flex
+------Thuộc tính chung cho các thuộc tính flex-grow, flex-co và cơ sở flex
+flex-basis	
+flex-direction
+flex-flow	
+flex-grow	
+flex-shrink	
+flex-wrap	
+float	
+------Chỉ định xem một hộp có nổi hay không.
+font
+------Thuộc tính tổng cho kiểu thuộc tính phông chữ, biến thể phông chữ, trọng lượng phông chữ, kích thước phông chữ / chiều cao dòng và thuộc tính họ phông chữ.
+@font-face	
+------Quy tắc cho phép các trang web tải xuống và sử dụng các phông chữ khác với phông chữ "an toàn cho web".
+font-family
+font-feature-settings	
+@font-feature-values
+------Cho phép các tác giả sử dụng một tên chung trong biến thể phông chữ thay thế cho tính năng được kích hoạt khác nhau trong OpenType.
+font-kerning	
+font-language-override	
+font-size	
+font-size-adjust	
+font-stretch	
+font-style	
+font-synthesis	
+font-variant	
+font-variant-alternates	
+font-variant-caps	
+font-variant-east-asian	
+font-variant-ligatures	
+font-variant-numeric	
+font-variant-position	
+font-weight
+grid	
+------Thuộc tính tốc ký cho các hàng lưới-mẫu-hàng, cột-lưới-cột, lưới-mẫu-khu vực, lưới tự động-hàng, cột tự động lưới và các thuộc tính tự động luồng lưới bao gồm:
+grid-area	
+grid-auto-columns	
+grid-auto-flow	
+grid-auto-rows
+grid-column	
+grid-column-end	
+grid-column-gap	
+grid-column-start	
+grid-gap	
+grid-row	
+grid-row-end	
+grid-row-gap	
+grid-row-start	
+grid-template	
+grid-template-areas	
+grid-template-columns
+grid-template-rows
+
+hanging-punctuation
+------Chỉ định xem một ký tự dấu chấm câu có thể được đặt bên ngoài hộp dòng không.
+height
+-Đặt chiều cao của một phần tử.
+hyphens
+------Đặt cách chia từ để cải thiện bố cục của đoạn văn.
+image-rendering	 
+------Đưa ra gợi ý cho trình duyệt về những khía cạnh nào của hình ảnh là quan trọng nhất để giữ gìn khi hình ảnh được thu nhỏ.
+@import
+------Cho phép bạn nhập một biểu định kiểu vào một biểu định kiểu khác.
+isolation
+------Xác định xem một phần tử có phải tạo nội dung xếp chồng mới không.
+justify-content
+-Chỉ định căn chỉnh giữa các mục bên trong một thùng chứa linh hoạt khi các mục không sử dụng tất cả không gian có sẵn.
+@keyframes
+------Chỉ định mã animation
+left
+------Chỉ định vị trí bên trái của phần tử định vị.
+letter-spacing
+------Tăng hoặc giảm khoảng trắng giữa các ký tự trong văn bản.
+line-break
+------Chỉ định cách / nếu ngắt dòng.
+line-height	
+------Đặt chiều cao của dòng.
+list-style
+------Đặt tất cả các thuộc tính cho một danh sách trong một khai báo bao gồm image, type...
+list-style-image	
+list-style-position	
+list-style-type
+margin 
+------Đặt tất cả các thuộc tính lề trong một khai báo bao gồm:
+margin-bottom	
+margin-left	
+margin-right	
+margin-top	
+max-height	
+max-width	
+@media	
+-----Đặt quy tắc kiểu cho các loại / thiết bị / kích cỡ phương tiện khác nhau.
+min-height	Đặt chiều cao tối thiểu của một phần tử.
+min-width	Đặt chiều rộng tối thiểu của một phần tử
+mix-blend-mode	
+------Chỉ định cách kết hợp nội dung của một thành phần với nền cha mẹ trực tiếp của nó.
+object-fit
+------Chỉ định cách lắp nội dung của phần tử thay thế vào hộp được thiết lập theo chiều cao và chiều rộng được sử dụng của nó.
+object-position
+------Chỉ định căn chỉnh của phần tử được thay thế bên trong hộp của nó.
+opacity
+------Đặt mức độ mờ cho một phần tử.
+order
+------Đặt thứ tự của mục linh hoạt, so với phần còn lại.
+orphans	
+------Đặt số lượng dòng tối thiểu phải còn lại ở dưới cùng của trang khi xảy ra ngắt trang bên trong một phần tử.
+outline	
+------Một thuộc tính tổng cho các thuộc tính chiều rộng phác thảo, kiểu phác thảo và các thuộc tính màu phác thảo.
+outline-color	
+outline-offset
+outline-style
+outline-width	
+overflow
+------Chỉ định điều gì xảy ra nếu nội dung tràn vào ô của phần tử bao gồm:
+overflow-wrap	
+overflow-x	
+overflow-y
+padding
+------Một thuộc tính tổng cho tất cả các thuộc tính đệm là khoảng cách giữa nội dung và phần viền của nó.
+padding-bottom	
+padding-left	
+padding-right	
+padding-top
+page-break-after
+------Đặt hành vi ngắt trang sau một phần tử.
+page-break-before	
+------Đặt hành vi ngắt trang sau một phần tử.
+page-break-inside
+------Đặt hành vi ngắt trang bên trong một phần tử
+perspective
+------Cung cấp cho một yếu tố định vị 3D một số phối cảnh.
+perspective-origin
+------Xác định vị trí mà người dùng đang xem xét phần tử định vị 3D.
+pointer-events
+------Xác định xem một phần tử có phản ứng với các sự kiện con trỏ hay không.
+position
+------Chỉ định loại phương thức định vị được sử dụng cho một phần tử (tĩnh, tương đối, tuyệt đối hoặc cố định).
+quotes
+------Đặt loại dấu ngoặc kép cho trích dẫn được nhúng.
+resize
+------Xác định nếu (và làm thế nào) một phần tử có thể thay đổi kích thước bởi người dùng.
+right
+------Ảnh hưởng đến vị trí ngang của một yếu tố định vị. không có hiệu lực trên các yếu tố không định vị.
+scroll-behavior
+------Chỉ định xem có làm động một cách trơn tru vị trí cuộn trong hộp có thể cuộn hay không, thay vì nhảy thẳn
+tab-size
+------Chỉ định chiều rộng của ký tự tab
+table-layout
+------Xác định bố trí các ô, hàng và cột của bảng
+text-align
+------Chỉ định căn chỉnh ngang của văn bản.
+text-align-last
+------Mô tả cách dòng cuối cùng của một khối hoặc một dòng ngay trước khi ngắt dòng bắt buộc được căn chỉnh.
+text-combine-upright
+------Chỉ định kết hợp nhiều ký tự vào khoảng trắng của một ký tự.
+text-decoration	
+------Chỉ định trang trí được thêm vào văn bản bao gồm color, style...
+text-decoration-color	
+text-decoration-line	
+text-decoration-style	
+text-indent
+------Chỉ định thụt dòng của dòng đầu tiên trong khối văn bản.
+text-justify
+------Chỉ định phương thức biện minh được sử dụng.
+text-orientation
+------Xác định hướng của văn bản trong một dòng.
+text-overflow
+------Chỉ định những gì sẽ xảy ra khi văn bản tràn phần tử chứa.
+text-shadow
+------Thêm bóng cho văn bản.
+text-transform
+------Kiểm soát viết hoa của văn bản.
+text-underline-position
+------Chỉ định vị trí của phần gạch chân được đặt bằng thuộc tính trang trí văn bản.
+top
+------Chỉ định vị trí trên cùng của một yếu tố định vị.
+transform	
+------Áp dụng chuyển đổi 2D hoặc 3D cho một phần tử.
+transform-origin  
+------Cho phép bạn thay đổi vị trí trên các phần tử được chuyển đổi	.
+transform-style	
+------Chỉ định cách các phần tử lồng nhau được hiển thị trong không gian 3D.
+transition	
+------Thuộc tính chung cho tất cả thuộc tính chuyển đổi bao gồm delay, duration,property....
+transition-delay	
+transition-duration	
+transition-property	
+transition-timing-function
+------Chỉ định đường cong tốc độ của hiệu ứng chuyển tiếp
+unicode-bidi
+------Được sử dụng cùng với thuộc tính hướng để đặt hoặc trả về liệu văn bản có bị ghi đè để hỗ trợ nhiều ngôn ngữ trong cùng một tài liệu không.
+user-select	
+------Chỉ định xem có thể chọn văn bản của một phần tử không.
+vertical-align  
+Đặt căn chỉnh dọc của một phần tử.
+visibility
+------Chỉ định xem một phần tử có thể nhìn thấy hay không.
+white-space
+------Chỉ định cách xử lý khoảng trắng bên trong một phần tử.
+width
+------Chiều rộng cho một phần tử.
+word-break
+------Chỉ định cách các từ sẽ ngắt khi đến cuối dòng.
+word-spacing
+------Tăng hoặc giảm khoảng trắng giữa các từ trong văn bản.
+word-wrap
+------Cho phép các từ dài, không thể phá vỡ được phá vỡ và bọc sang dòng tiếp theo.
+writing-mode
+------Chỉ định xem các dòng văn bản được đặt theo chiều ngang hoặc chiều dọc.
+z-index
+------Quy định phần tử ngăn xếp của phần tử được định vị.
+
+ĐƠN VỊ ĐO TRONG CSS
+%	
+------Đo theo phần trăm liên quan đến một giá trị khác, thường là một phần tử bao quanh.	
+p { font-size: 30px;
+   line-height: 10%;
+ }
+cm
+------Được tính bằng cm.
+div {
+margin-left: 20cm;
+}
+em
+------Liên quan đến chiều cao x của phông chữ. 1em tương đương 1 phông ta đang dùng.
+nên nếu bạn dùng phông 13 thì 2em là 26px;
+ex	
+------Liên quan đến chiều cao x của phông chữ hiện tại (hiếm khi được sử dụng).
+in	
+------Xác định một đơn vị đo bằng inch.	inches (1in = 96px = 2.54cm).
+mm	
+------Định nghĩa đơn vị đo bằng milimet.
+pc
+-----Xác định một đơn vị đo trong picas. picas (1pc = 12 pt).
+pt	
+------Định nghĩa đơn vị đo theo điểm. Một điểm được định nghĩa là 1/72 của một inch. points (1pt = 1/72 of 1in).
+px	
+------Định nghĩa đơn vị đo trong các điểm ảnh trên màn hình. pixels (1px = 1/96th of 1in).
+vh	
+------Liên quan đến 1% chiều cao của khung nhìn .
+vw
+------Liên quan đến 1% chiều rộng của khung nhìn .
+vmin
+------Liên quan đến 1% kích thước nhỏ hơn của khung nhìn.
+vmax
+------Liên quan đến 1% kích thước lớn hơn của khung nhìn.
+
+
